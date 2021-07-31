@@ -99,9 +99,7 @@ class App extends Component {
         {loading && <LoaderSpinner />}
         {button && !loading && <Button onClick={this.getImagesList} />}
         {openModal && (
-          <Modal onClose={this.toggleModal}>
-            <img src={largeImageURL} alt={tags} />
-          </Modal>
+          <Modal onClose={this.toggleModal} src={largeImageURL} alt={tags} />
         )}
       </div>
     );
